@@ -16,16 +16,16 @@ export function Navbar() {
 
     return(
         <header id="navbar">
-            <Link to='/' className='logo'>
+            <Link to='/home' className='logo'>
                 <img src={require('../../assets/images/logo.png')} alt="YelpCamp" />
             </Link>
             <div className='menu_mobile' onClick={handleSetActive} >
                  {active ? <FaTimes  className='icon_menu'/> : <FaBars className='icon_menu'/> }
             </div>
             <nav className={active? 'nav_links active' : 'nav_links' } >
-                <Link to='/'>Home</Link>
+                <Link to='/home'>Home</Link>
 
-                <div className="rigth_content">
+                <div className="right_content">
                     <Link to='/login'>Login</Link>
                     <Link to='/create-account'>
                         <Button>Create an account</Button>

@@ -5,7 +5,7 @@ import './styles.scss';
 export function Footer() {
     return(
         <footer>
-            <Link to='#'>
+            <Link to='/home'>
                 <img src={require('../../assets/images/logo.png')} alt="YelpCamp" />
             </Link>
         </footer>

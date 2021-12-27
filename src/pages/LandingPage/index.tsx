@@ -8,7 +8,7 @@ export function LandingPage() {
     return(
         <section className='landingPage'>
             <div className="logo">
-                <Link to='/yelpcamp'>
+                <Link to='/'>
                     <img src={require('../../assets/images/logo.png')} alt="YelpCamp" />
                 </Link>
             </div>

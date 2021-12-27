@@ -17,10 +17,10 @@ export function LoginForm(props: LoginFormType) {
     return (
         <section className="form">
             <header>
-                <Link to='/'>
+                <Link to='/home'>
                     <img src={require('../../assets/images/logo.png')} alt="YelpCamp" />
                 </Link>
-                <Link to='/' >
+                <Link to='/home' >
                     <CgArrowLongLeft />
                     <span>Back to campgrounds</span>
                 </Link>
