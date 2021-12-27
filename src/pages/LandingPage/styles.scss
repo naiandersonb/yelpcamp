@@ -1,0 +1,193 @@
+.landingPage {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 102px 1fr;
+
+    background-color: #F9F6F1;
+
+    .logo {
+        height: 102px;
+        width: 100%;
+        grid-row-start: 1;
+
+        display: flex;
+        align-items: center;
+        
+        padding-left: 102px;
+    }
+
+    .hero_content {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        padding: 0 102px;
+
+        .hero_content_container {
+            h1 {
+                font-size: 76px;
+                line-height: 86px;
+                color: #000;
+
+                max-width: 635px;
+            }
+
+            p {
+                max-width: 635px;
+                color: #545454;
+
+                font-size: 26px;
+                line-height: 40px;
+
+                padding: 16px 0;
+            }
+
+            ul {
+                padding: 0 0 26px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 13px;
+                    padding: 3px 0;
+
+                    font-size: 26px;
+                    line-height: 40px;
+                    color: #545454;
+
+                    .hero_icon {
+                        color: #10A084;
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            .bnt_container {
+                max-width: 316px;
+                font-size: 26px;
+                margin-bottom: 16px;
+
+                button {
+                    height: 91px;
+                }
+            }
+
+            .hero_footer {
+                p {
+                    font-size: 24px;
+                    margin: 0;
+                }
+
+                .hero_footer_imgs {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    max-width: 500px;
+
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .hero_img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+
+        min-height: 100vh;
+
+        background-image: url('../../assets/images/hero-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media screen and (max-width: 968px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 102px 377px 1fr;
+
+        .logo {
+            padding-left: 18px;
+        }
+        
+        .hero_img {
+            grid-row-start: 2;
+            grid-column-start: 1;
+
+            min-height: 377px;
+            max-height: 377px;
+
+            background-image: url('../../assets/images/hero-img-tablet-mobile.jpg');
+        }
+
+                
+        .hero_content {
+            grid-row-start: 3;
+            padding: 18px;
+
+            .hero_content_container {
+                h1 {
+                    font-size: 36px;
+                    line-height: 46px;
+
+                }
+    
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+    
+                    padding: 12px 10px 12px 0;
+                }
+    
+                ul {
+                    padding: 0 0 26px;
+    
+                    li {  
+                        font-size: 16px;
+                        line-height: 26px;
+    
+                        .hero_icon {
+                            font-size: 16px;
+                        }
+                    }
+                }
+    
+                .bnt_container {
+                    max-width: 250px;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+    
+                    button {
+                        height: 65px;
+                    }
+                }
+    
+                .hero_footer {
+                    p {
+                        font-size: 16px;
+                        margin: 0;
+                    }
+    
+                    .hero_footer_imgs {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        max-width: 500px;
+    
+                        img {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#home {
+    width: 100%;
+    padding: .5em 1em;
+
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .campgrounds {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 40px;
+            margin: 110px 0;
+
+            @media screen and (max-width: 890px) {
+                grid-template-columns: auto auto;
+            }
+
+            @media screen and (max-width: 640px) {
+                grid-template-columns: 100%;
+            }
+    
+        }
+
+        @media screen and (max-width: 960px) {
+            padding: 0 42px;
+        }
+
+        @media screen and (max-width: 640px) {
+            padding: 0 20px;
+        }
+    }
+}

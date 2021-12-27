@@ -1,0 +1,40 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1em 2em;
+    transition: .4s;
+}
+
+.btn:hover {
+    background-color: rgba(29, 29, 29, 0.945);
+}
+
+.btn_outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 1em 2em;
+    transition: .4s;
+    border: 1px solid #dcdcdc;
+}
+
+.btn_outline:hover {
+    background-color: rgb(236, 236, 236);
+}

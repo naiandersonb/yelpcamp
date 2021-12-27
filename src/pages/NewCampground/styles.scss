@@ -1,0 +1,79 @@
+#new_campground {
+    width: 100%;
+    padding: 0 1em;
+
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .content {
+
+            max-width: 748px;
+            margin: 0 auto;
+
+            h1 {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 52px;
+                margin-bottom: 58px;
+            }
+
+            form {
+                width: 100%;
+
+                label {
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: #686868;
+                    line-height: 26px;
+                }
+
+                input {
+                    margin: 24px 0 32px;
+                    font-size: 24px;
+                }
+
+                textarea {
+                    width: 100%;
+                    background-color: #F7F7F7;
+                    border: 0;
+                    border-radius: 9px;
+                    height: 289px;
+                    padding: 1.5em;
+                    font-size: 24px;
+                    margin: 24px 0 0;
+                }
+
+                button {
+                    margin: 24px 0;
+                }
+            }
+
+            @media screen and(max-width: 768px) {
+                h1 {
+                    font-size: 36px;
+                    line-height: 38px;
+                }
+
+                form {
+                    
+                    label {
+                        font-size: 18px;
+                    }
+
+                    input {
+                        font-size: 18px;
+                        height: 61px;
+                    }
+
+                    textarea {
+                        font-size: 18px;
+                        height: 220px;
+                    }
+
+                }
+            }
+
+        }
+    }
+}

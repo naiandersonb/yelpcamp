@@ -1,0 +1,19 @@
+#login {
+    width: 100%;
+
+    .container {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        .form_container {
+            width: 100%;
+        }
+
+        @media screen and(max-width: 920px) {
+            flex-direction: column;
+        }
+
+    }
+}

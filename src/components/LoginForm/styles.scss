@@ -1,0 +1,128 @@
+.form {
+    padding: 49px 201px;
+    width: 100%;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 100px;
+
+        a {
+            &:nth-child(2) {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                color: #424242;
+
+                font-size: 24px;
+                line-height: 26px;
+                font-weight: 400;
+                
+                @media screen and(max-width: 768px) {
+                    gap: 7px;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    .form_content {
+        margin-top: 50px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 52px;
+            
+            @media screen and(max-width: 768px) {
+                font-size: 36px;
+                line-height: 39px;
+            }
+        }
+
+        form {
+            margin-top: 35px;
+
+            label {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 26px;
+                color: #808080;
+            }
+
+            .input {
+                margin: 10px 0 20px;
+            }
+
+            button {
+                font-size: 24px;
+                line-height: 26px;
+
+                height: 83px;
+                margin: 30px 0 20px;
+
+                @media screen and(max-width: 768px) {
+                    height: 61px;
+                    font-size: 16px;
+                }
+            }
+
+            @media screen and(max-width: 768px) {
+                label {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                .input {
+                    height: 61px;
+                    input {
+                        padding: 20px 10px;
+                    }
+                }
+            }
+        }
+
+        .create_account {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            span {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 26px;
+                color: #808080;
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 26px;
+
+                text-decoration: underline;
+                color: #229FB1;
+            }
+
+            @media screen and(max-width: 768px) {
+                span {
+                    font-size: 16px;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 1000px) {
+        padding: 80px;
+    }
+
+    @media screen and(max-width: 500px) {
+        padding: 18px;
+    }
+}

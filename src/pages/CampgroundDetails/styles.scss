@@ -1,0 +1,204 @@
+#Campground {
+    width: 100%;
+    padding: 1em;
+
+    @media screen and(max-width: 768px) {
+        padding: 24px;
+    }
+
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .content {
+            width: 100%;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 50px;
+
+            .map {
+                width: 30%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .details {
+                width: 70%;
+
+                .campground_details {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card_header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 85px;
+
+                        h2 {
+                            font-size: 31px;
+                            line-height: 34px;
+                            font-weight: 700;
+                        }
+
+                        span {
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 26px;
+                        }
+
+                        @media screen and(max-width: 768px) {
+                            
+                            h2 {
+                                font-size: 24px;
+                            }
+                            
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+
+                    }
+
+                    .description {
+                        p {
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 26px;
+                            color: #606060;
+                            margin-bottom: 20px;
+                        }
+
+                        span {
+                            font-weight: 400;
+                            font-style: italic;
+                            font-size: 20px;
+                            line-height: 26px;
+                            color: #606060;
+                            margin-bottom: 20px;
+                        }
+
+                        @media screen and(max-width: 768px) {
+                            p {
+                                font-size: 18px;
+                            }
+
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+
+                    }
+                }
+
+                .reviews {
+                    margin-top: 50px;
+                    width: 100%;
+
+                    .reviews_content {
+                        width: 100%;
+                        border-bottom: 1px solid #DCDCDC;
+
+                        .header {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            height: 60px;
+
+                            h2 {
+                                font-size: 24px;
+                                line-height: 34px;
+                                font-weight: 500;
+                            }
+
+                            span {
+                                font-weight: 400;
+                                font-size: 21px;
+                                color: #7a7a7a;
+                                line-height: 23px;
+                            }
+
+                            @media screen and(max-width: 768px) {
+                                h2 {
+                                    font-size: 20px;
+                                }
+
+                                span {
+                                    font-size: 16px; 
+                                }
+                            }
+                        }
+
+                        p {
+                            font-weight: 400;
+                            font-size: 21px;
+                            color: #7a7a7a;
+                            line-height: 31px;
+                            margin-bottom: 20px;
+                            
+                            @media screen and(max-width: 768px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .new_review {
+                        width: 100%;
+
+                        display: flex;
+                        justify-content: end;
+
+                        a {
+                            background-color: #000;
+                            color: #fff;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+
+                            align-self: flex-end;
+                            padding: 20px;
+                            border-radius: 8px;
+                            max-width: 240px;
+
+                            margin: 20px 0 0;
+                        }
+                    }
+                }
+            }
+
+            @media screen and(max-width: 768px) {
+                flex-direction: column-reverse;
+
+                .map {
+                    width: 100%;
+                }
+
+                .details {
+                    width: 100%;
+                }
+
+
+            }
+        }
+    }
+}
+
+.card {
+    width: 100%;
+    padding: 65px;
+    border: 1px solid #DCDCDC;
+    border-radius: 9px;
+
+    @media screen and(max-width: 768px) {
+        padding: 45px;
+    }
+}
