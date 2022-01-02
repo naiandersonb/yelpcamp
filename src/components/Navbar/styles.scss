@@ -61,23 +61,25 @@
         .nav_links {
             flex-direction: column;
 
-            position: fixed;
+            position: absolute;
             justify-content: center;
             align-items: center;
             
             left: -100%;
             
-            .rigth_content {
+            .right_content {
                 flex-direction: column;
             }
             
             &.active {
                 left: 0;
-                top: 103px;
+                top: 98px;
                 width: 100%;
-                height: 89vh;
+                height: 30vh;
                 background-color: #fff;
                 z-index: 1;
+
+                padding-bottom: 20px;
 
                 a {
                     padding-top: 5%;
@@ -86,7 +88,7 @@
                     color: #4D4D4D;
                 }
         
-                .rigth_content {
+                .right_content {
                     align-items: center;
                     gap: 30px;
                 }
